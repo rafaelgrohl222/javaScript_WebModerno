@@ -1,0 +1,39 @@
+//For of, laço de repetição
+
+//Exemplo 1: for of
+for (let letra of "Cod3r") {
+    console.log(letra)
+}
+
+const assuntosEcma = ['Map','Set','Promise']
+
+//Exemplo 2: for in
+for (let i in assuntosEcma) {
+    console.log(i)
+}
+
+//Exemplo 3: for of
+for (let assunto of assuntosEcma) {
+    console.log(assunto)
+}
+
+const assuntoMap = new Map([
+    ['Map', { abordado: true }],
+    ['Set', { abordado: true}],
+    ['Promise', { abordado: false}]
+])
+for (let assunto of assuntoMap) {
+    console.log(assunto)
+}
+for (let chave of assuntoMap.keys()) {
+    console.log('keys:',chave)
+}
+for (let chave of assuntoMap.values()) {
+    console.log('values:',chave)
+}
+for (let [ch,vl] of assuntoMap.entries()) {
+    console.log('entries:',ch,vl)
+}
+
+const s = new Set(['a','b','c'])
+for (let letra of s) {console.log(letra)}
